@@ -6,6 +6,8 @@ from sentence_transformers import SentenceTransformer, CrossEncoder
 import openai
 from flask import Flask, request, jsonify
 
+
+openai.api_key = os.environ.get("api_key") 
 # Initialize Flask app
 app = Flask(__name__)
 
